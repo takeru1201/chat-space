@@ -1,0 +1,24 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info--left-box
+      %li.chat-main__group-info--left-box__current-group takeru
+      %li.chat-main__group-info--left-box__member-list Menber: hayato
+    = link_to "#", class: "chat-main__group-info--right-box" do
+      Edit   
+  .chat-main__message-list
+    .chat-main__message-list--messages
+      %li.chat-main__message-list--messages__name takeru
+      %li.chat-main__message-list--messages__date 2020.2.8
+    %li.chat-main__message-list--messages__text ohayou
+    .chat-main__message-list--messages
+      %li.chat-main__message-list--messages__name takeru
+      %li.chat-main__message-list--messages__date 2020.2.8
+    %li.chat-main__message-list--messages__text ohayou
+  .chat-main__message-form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
