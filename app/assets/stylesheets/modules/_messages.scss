@@ -15,30 +15,30 @@ $side-bar-color: #253141;
     align-items: center;
     display: flex;
     padding: 0 20px;
-   &--top-items{
-     background-color: $side-bar-color;
-     height: 20px;
-     width: 260px;
-     justify-content: space-between;
-     display: flex;
-     &__name{
-       color: $color-white;
-       list-style: none;
-       text-align: center; 
-     }
-     &__icon{
-       list-style: none;
-       width: 60px;
-       background-color: $side-bar-color;
-       &__new-group i{
-         margin-left: 5px;
-       }
-         a{
-           color: $color-white;
-           float: right;
-         }
-     }
-   }
+    &--top-items{
+      background-color: $side-bar-color;
+      height: 20px;
+      width: 260px;
+      justify-content: space-between;
+      display: flex;
+      &__name{
+        color: $color-white;
+        list-style: none;
+        text-align: center; 
+      }
+      &__icon{
+        list-style: none;
+        width: 60px;
+        background-color: $side-bar-color;
+        &__new-group i{
+          margin-left: 5px;
+        }
+        a{
+          color: $color-white;
+          float: right;
+        }
+      }
+    }
   }
   &__group-list{
     background-color: #2f3e51;
@@ -58,8 +58,8 @@ $side-bar-color: #253141;
         font-size: 11px;
       }
     }
-    }
   }
+}
 
 
 .chat-main{
@@ -120,9 +120,9 @@ $side-bar-color: #253141;
         font-size: 12px;
       }
       &__text{
-      color: #434a54;
-      font-size: 14px;
-      padding-bottom: 46px;
+        color: #434a54;
+        font-size: 14px;
+        padding-bottom: 46px;
       }
     }
   }
@@ -152,7 +152,7 @@ $side-bar-color: #253141;
               display: none;
             }
           }
-        }
+      }
         .submit-btn{
           background-color: #38aef0;
           color: $color-white;
@@ -160,9 +160,9 @@ $side-bar-color: #253141;
           width: 100px;
           padding: 0 30px;
           margin-left: 15px;
-       }
+        }
     }
   }
-  }
+}
 
 
