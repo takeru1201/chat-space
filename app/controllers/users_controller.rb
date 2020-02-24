@@ -1,5 +1,15 @@
 class UsersController < ApplicationController
 
+  def index
+    @user = User.includes(:user)
+    @users = User.all
+  end
+
+  def show
+    user = User.find(params[:id])
+    @nickname = user.name
+    # @tweets = user.tweets
+  end
   def edit
   end
 
