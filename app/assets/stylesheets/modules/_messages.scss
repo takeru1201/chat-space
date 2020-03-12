@@ -50,11 +50,17 @@ $side-bar-color: #253141;
       margin-bottom: 40px;
       list-style: none;
       font-weight: bold;
+        a{
+          text-decoration: none;
+        }
       &__name{
+        color: $color-white;
+        text-decoration: none;
         font-size: 15px;
         padding-bottom: 5px;
       }
       &__message{
+        color: $color-white;
         font-size: 11px;
       }
     }
@@ -86,6 +92,10 @@ $side-bar-color: #253141;
         color: #999999;
         font-size: 12px;
         padding-top: 30px;
+        display: flex;
+        &__name{
+
+        }
       }
     }
     &--right-box{
@@ -105,6 +115,7 @@ $side-bar-color: #253141;
     background-color: #fafafa;
     height: calc(100vh - 190px);
     border-top: solid 1px #eeeeee;
+    overflow: scroll;
     padding: 40px ;
     list-style: none;
     &--messages{
@@ -123,6 +134,9 @@ $side-bar-color: #253141;
       color: #434a54;
       font-size: 14px;
       padding-bottom: 46px;
+        &__image{
+        width: 140px;
+        }
       }
     }
   }
