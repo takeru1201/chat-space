@@ -4,23 +4,19 @@
       %li.chat-main__group-info--left-box__current-group 
         = @group.name
       %li.chat-main__group-info--left-box__member-list 
-        Member:
-        %ul
-          - @group.users.each do |user|
+        Member: 
+        %ul.chat-main__group-info--left-box__member-list__name
+          - @group.users.each do |user| 
             = user.name
     = link_to edit_group_path(@group), class: "chat-main__group-info--right-box" do
       Edit   
   .chat-main__message-list
     = render @messages
-    .chat-main__message-list--messages
-      %li.chat-main__message-list--messages__name 
-      %li.chat-main__message-list--messages__date 
-    %li.chat-main__message-list--messages__text 
   .chat-main__message-form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: "input-box__text", placeholder: "type a message" 
       .input-box
+        = f.text_field :content, class: "input-box__text", placeholder: "type a message" 
         = f.label :image, class: "input-box__image" do
           = icon('fas', 'image')
           = f.file_field :image, class: "input-box__image__file" 
-      = f.submit class: "submit-btn", value: "Send" 
+      = f.submit "Send", class: "submit-btn"
