@@ -1,10 +1,11 @@
-.chat-main__message-list--messages
-  %li.chat-main__message-list--messages__name
-    = message.user.name
-  %li.chat-main__message-list--messages__date
-    = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-%li.chat-main__message-list--messages__text 
-  - if message.content.present?
-    %p.chat-main__message-list--messages__text__content
-      = message.content
-  = image_tag message.image.url, class: 'chat-main__message-list--messages__text__image' if message.image.present?
+.message{data: {message: {id: message.id}}}
+  .chat-main__message-list--messages
+    %li.chat-main__message-list--messages__name
+      = message.user.name
+    %li.chat-main__message-list--messages__date
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  %li.chat-main__message-list--messages__text
+    - if message.content.present?
+      %p.chat-main__message-list--messages__text__content
+        = message.content
+    = image_tag message.image.url, class: 'chat-main__message-list--messages__text__image' if message.image.present?
