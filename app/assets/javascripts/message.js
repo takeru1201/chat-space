@@ -21,14 +21,14 @@ $(function(){
         return html;
       } else {
         var html =
-        `<div class="message" data-message-id="${message.id}">
-           <div class="chat-main__message-list--messages">
-             <div class="chat-main__message-list--messages__name">
-               ${message.user_name}
-             </div>
-             <div class="chat-main__message-list--messages__date">
-               ${message.created_at}
-             </div>
+         `<div class="message" data-message-id="${message.id}">
+            <div class="chat-main__message-list--messages">
+              <div class="chat-main__message-list--messages__name">
+                ${message.user_name}
+              </div>
+              <div class="chat-main__message-list--messages__date">
+                ${message.created_at}
+              </div>
             </div>
             <div class="chat-main__message-list--messages__text">
               <p class="chat-main__message-list--messages__text__content">
