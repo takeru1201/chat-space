@@ -20,7 +20,7 @@ $(function(){
           </div>`
         return html;
       } else {
-        var html 
+        var html =
         `<div class="message" data-message-id="${message.id}">
            <div class="chat-main__message-list--messages">
              <div class="chat-main__message-list--messages__name">
