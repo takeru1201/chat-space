@@ -11,7 +11,7 @@ $(function(){
                 ${message.created_at}
               </div>
             </div>
-            <div class="chat-main__message-list--messages__text ">
+            <div class="chat-main__message-list--messages__text">
               <p class="chat-main__message-list--messages__text__content">
                 ${message.content}
               </p>
@@ -38,7 +38,7 @@ $(function(){
           </div>`
         return html;
       };
-    };
+    }
 $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
